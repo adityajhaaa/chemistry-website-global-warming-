@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Global warming</title>
+
+    <meta
+      name="description"
+      content="Fore is a free, responsive front end template from Papaya, made by Jordan Bowman."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Jordan Bowman" />
+    <meta
+      name="keywords"
+      content="awesome, hott, extremely attractive, sheer brilliance"
+    />
+
+    <link rel="author" href="Google+URL" />
+
+    <link rel="shortcut icon" href="assets/ico/favicon.ico" />
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="touch-icon-ipad.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="touch-icon-iphone-retina.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="touch-icon-ipad-retina.png"
+    />
+
+    <link rel="stylesheet" type="text/css" href="less/master.css" />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato:300,400,900"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header id="main-header">
+      <div class="container">
+        <h1>Global Warming</h1>
+        <p>A free responsive site template from Papaya</p>
+      </div>
+    </header>
+
+    <section id="macbook">
+      <div class="container">
+        <h2>What's this all about?</h2>
+        <p>
+          Global warming, driven by human activities, is causing rising
+          temperatures, melting ice caps, and extreme weather events. Urgent
+          action is needed to reduce greenhouse gas emissions, protect
+          ecosystems, and ensure a habitable planet for future generations.
+        </p>
+        <img src="images/macbookpro.png" />
+      </div>
+    </section>
+
+    <!-- Summary Section -->
+    <section id="summary">
+      <div class="container">
+        <h2>What makes Fore so great?</h2>
+        <p>
+          It's responsive, beautiful, built with the latest code, includes all
+          front end files, and (best of all) it is and always will be free.
+          Didn't even see that comin', didya?
+        </p>
+      </div>
+    </section>
+
+    <!-- Three Images Section -->
+    <section id="three-images">
+      <div class="container">
+        <header class="body-header">
+          <h2>You're probably feeling really inspired.</h2>
+          <p>
+            Inspire collective action, promote renewable energy, and foster
+            sustainable practices for a resilient future.
+          </p>
+        </header>
+        <article class="cf">
+          <div class="img-circle-div">
+            <img src="images/circle1.jpg" />
+            <h3>Building a Sustainable Future</h3>
+
+          </div>
+          <div class="img-circle-div">
+            <img src="images/circle2.jpg" />
+            <h3>Empowering Change</h3>
+
+          </div>
+          <div class="img-circle-div">
+            <img src="images/circle3.jpg" />
+            <h3>Towards a Greener Tomorrow</h3>
+
+          </div>
+        </article>
+      </div>
+    </section>
+
+   
+    <!-- Second call to action -->
+    <section class="call-to-action cta-2">
+      <div class="cta-container cf">
+        <p>Astounding call to action? Yeah, that's right.</p>
+        <a class="btn" href="#">Get Started →</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="social-boat">
+          <div class="gplus">
+            <!-- Place this tag where you want the +1 button to render. -->
+            <div class="g-plusone"></div>
+
+            <!-- Place this tag after the last +1 button tag. -->
+            <script type="text/javascript">
+              (function () {
+                var po = document.createElement("script");
+                po.type = "text/javascript";
+                po.async = true;
+                po.src = "https://apis.google.com/js/plusone.js";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(po, s);
+              })();
+            </script>
+          </div>
+          <div class="twitter">
+            <a href="https://twitter.com/share" class="twitter-share-button"
+              >Tweet</a
+            >
+            
+          </div>
+          <div class="facebook">
+            <div id="fb-root">Like</div>
+            <div
+              class="fb-like"
+              data-layout="button_count"
+              data-action="like"
+              data-show-faces="false"
+              data-share="false"
+            ></div>
+          </div>
+        </div>
+        <div id="footer-text" class="small">
+          <p>
+            &copy; Global Warming | Global warming website
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Reference jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-1.10.2.min.js"><\/script>'
+        );
+    </script>
+
+    <!-- Reference Javascript, minify for production -->
+    <script type="text/javascript" src="js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="js/jquery.event.swipe.js"></script>
+    <script type="text/javascript" src="js/unslider.js"></script>
+
+    <!-- Unslider script -->
+    <script>
+      $(document).ready(function () {
+        var unslider = $(".slider").unslider();
+        $(".unslider-arrow").click(function (event) {
+          event.preventDefault();
+          if ($(this).hasClass("next")) {
+            unslider.data("unslider")["next"]();
+          } else {
+            unslider.data("unslider")["prev"]();
+          }
+        });
+        var unslider = $(".slider").unslider();
+
+        unslider.on("movestart", function (e) {
+          if (
+            (e.distX > e.distY && e.distX < -e.distY) ||
+            (e.distX < e.distY && e.distX > -e.distY)
+          ) {
+            e.preventDefault();
+          }
+        });
+      });
+    </script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] ||
+          (b[l] = function () {
+            (b[l].q = b[l].q || []).push(arguments);
+          });
+        b[l].l = +new Date();
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = "//www.google-analytics.com/analytics.js";
+        r.parentNode.insertBefore(e, r);
+      })(window, document, "script", "ga");
+      ga("create", "UA-XXXXX-X");
+      ga("send", "pageview");
+    </script>
+  </body>
+</html>
